@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #e9eaed; 
+    background-color: #e9eaed;
 }
 
 .app-container {
@@ -22,7 +21,6 @@ body {
     max-width: 500px;
 }
 
-
 input[type="text"] {
     width: 80%;
     padding: 10px;
@@ -33,7 +31,6 @@ input[type="text"] {
     outline: none;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
 
 button {
     background-color: #007BFF;
@@ -50,7 +47,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-
 #weatherOutput {
     margin-top: 20px;
     color: #333;
@@ -61,23 +57,20 @@ button:hover {
     margin-top: 10px;
 }
 
-
 .flag {
-    height: auto; 
-    width: 40px; 
-    margin-left: 10px;
-    vertical-align: middle; 
-    border-radius: 4px; 
+    height: auto;
+    width: 40px; /* Default size for desktop */
+    margin-left: 5px;
+    vertical-align: middle;
+    border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-
 
 #searchHistory {
     margin-top: 20px;
     font-size: 14px;
     color: #555;
 }
-
 
 @media (max-width: 600px) {
     .app-container {
@@ -96,6 +89,10 @@ button:hover {
     #weatherOutput {
         font-size: 14px;
     }
+
+    .flag {
+        width: 25px; /* Slightly larger flag for mobile */
+    }
 }
 
 @media (max-width: 400px) {
@@ -105,6 +102,6 @@ button:hover {
     }
 
     .flag {
-        width: 15px; 
+        width: 30px; /* Even larger flag on very small devices */
     }
 }
